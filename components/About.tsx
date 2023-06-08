@@ -12,17 +12,17 @@ export default function About() {
           />
         </div>
         <div className="bio flex justify-start items-start flex-col gap-4">
-          <h3>ABDRAHIM anedam</h3>
+          <h3>ABDRAHIM aneddam</h3>
           <div className="">
             <p className="flex flex-col gap-4 justify-start items-start">
-              I&apos;m Ismail Ghallou, I currently have valuable experience as a
-              Senior Frontend Engineer at Diagonal Finance, where I contributed
-              to various projects. Prior to that, I held a similar role at The
-              Landing, making significant contributions to notable projects.
-              When I&apos;m not immersed in coding or designing, I find solace
-              in the pages of books and manga, immerse myself in captivating
-              video games, or indulge in the world of anime.
-              <h5 className="text-base font-normal w-full">
+              I&apos;m Abderrahim aneddam, I currently have valuable experience
+              as a Senior Frontend Engineer at Diagonal Finance, where I
+              contributed to various projects. Prior to that, I held a similar
+              role at The Landing, making significant contributions to notable
+              projects. When I&apos;m not immersed in coding or designing, I
+              find solace in the pages of books and manga, immerse myself in
+              captivating video games, or indulge in the world of anime.
+              <h5 className="font-normal w-full">
                 Some technologies I have worked with recently:
               </h5>
               <ul className="list-disc flex gap-2 pl-4 flex-col w-full">
