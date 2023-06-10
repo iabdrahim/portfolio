@@ -124,21 +124,6 @@ h1 {
   }
 }
 
-nav {
-  position: sticky;
-  z-index: 10;
-  top: -1px;
-  padding: 0px 1rem;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(7px);
-  background: #0000003d;
-  transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
-  border-bottom-color: transparent;
-  z-index: 5;
-  ul {
-    gap: 1.5rem;
-  }
-}
 aside > div,
 nav > div {
   h3 {
@@ -154,6 +139,26 @@ nav > div {
   }
   svg {
     cursor: pointer;
+  }
+}
+nav {
+  position: sticky;
+  z-index: 10;
+  top: -1px;
+  padding: 0px 1rem;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(7px);
+  background: #0000003d;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
+  border-bottom-color: transparent;
+  z-index: 5;
+  ul {
+    gap: 1.5rem;
+  }
+  h3 {
+    @media not all and (min-width: 768px) {
+      font-size: 17px !important ;
+    }
   }
 }
 
