@@ -33,8 +33,8 @@ export default function ProBox({ pro }: { pro: any }) {
         <Image
           src={pro.img}
           alt={pro.name}
-          unoptimized={isNotBlur}
-          quality={100}
+          // unoptimized={isNotBlur}
+          unoptimized={true}
           width={0}
           priority={false}
           height={0}

@@ -5,10 +5,10 @@ import { CgClose } from "react-icons/cg";
 export default function Nav() {
   let [isOpen, setOpen] = useState(false);
   let [isVisibles, setVisibles] = useState({
-    hero: false,
-    about: false,
-    pro: false,
-    contact: false,
+    hero: "",
+    about: "",
+    pro: "",
+    contact: "",
   });
 
   const handleVisibility = () => {
@@ -17,14 +17,14 @@ export default function Nav() {
         .querySelector(".hero")
         .getBoundingClientRect();
       const isVisible = y + height > 0;
-      setVisibles((prv) => ({ ...prv, hero: isVisible }));
+      setVisibles((prv) => ({ ...prv, hero: isVisible ? "active" : "" }));
     }
     if (document.querySelector(".about")) {
       const { top, y, height } = document
         .querySelector(".about")
         .getBoundingClientRect();
       const isVisible = y <= 0 && y + height > 0;
-      setVisibles((prv) => ({ ...prv, about: isVisible }));
+      setVisibles((prv) => ({ ...prv, about: isVisible ? "active" : "" }));
     }
     if (document.querySelector(".project")) {
       const { top, y, height } = document
@@ -32,7 +32,7 @@ export default function Nav() {
         .getBoundingClientRect();
       const isVisible = y <= 0 && y + height > 10;
 
-      setVisibles((prv) => ({ ...prv, pro: isVisible }));
+      setVisibles((prv) => ({ ...prv, pro: isVisible ? "active" : "" }));
     }
     if (document.querySelector(".contact")) {
       const { top, y, height } = document
@@ -40,7 +40,7 @@ export default function Nav() {
         .getBoundingClientRect();
       const isVisible = y <= 0 && y + height > 10;
 
-      setVisibles((prv) => ({ ...prv, contact: isVisible }));
+      setVisibles((prv) => ({ ...prv, contact: isVisible ? "active" : "" }));
     }
   };
 
@@ -68,17 +68,17 @@ export default function Nav() {
           <h3>ABDRAHIM ANEDAM</h3>
           <CgClose onClick={() => setOpen(!isOpen)} size={24} />
         </div>
-        <ul>
-          <li className={isVisibles.hero ? "active" : ""}>
+        <ul className="max-md:gap-8">
+          <li className={isVisibles.hero}>
             <a href="#HERO">HERO</a>
           </li>
-          <li className={isVisibles.about ? "active" : ""}>
+          <li className={isVisibles.about}>
             <a href="#ABOUT">About</a>
           </li>
-          <li className={isVisibles.pro ? "active" : ""}>
+          <li className={isVisibles.pro}>
             <a href="#PORTOFOLIO">PORTOFOLIO</a>
           </li>
-          <li className={isVisibles.contact ? "active" : ""}>
+          <li className={isVisibles.contact}>
             <a href="#CONTACT">CONNTACT</a>
           </li>
         </ul>
