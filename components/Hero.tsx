@@ -3,7 +3,7 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="section hero" id="HERO">
-      <h1 className="text-9xl max-md:text-6xl max-md:gap-5">
+      <h1 className="text-8xl max-md:text-6xl items-start max-md:gap-5">
         <span className="flex gap-4 justify-center items-center max-md:flex-col max-md:w-full">
           I AM{" "}
           <span className="effect">
