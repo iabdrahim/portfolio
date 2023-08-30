@@ -12,10 +12,10 @@ export default function Home() {
         <Container className="mt-20 hero">
             <div className="">
                 <h1 className="w-full max-md:mt-6 text-8xl mb-6 font-black text-center max-md:text-[2.9rem]">
-                    I Know
-                    <span className="text-[#d7b25f]">Good Dev</span> That Means
+                    I Know That
+                    <span className="text-[#d7b25f]">Good Dev</span> Means
                     <br />
-                    makes <span className="text-[#d7b25f]">Good Business</span>.
+                    <span className="text-[#d7b25f]">Good Business</span>.
                 </h1>
 
                 <div className="container text-center">

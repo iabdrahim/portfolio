@@ -25,22 +25,23 @@ export default function Portfolio() {
                     Most of the things you (maybe) want to know about me.
                     <br />
                     <br />
-                    I'm abdrahim! Let me tell you a little bit about myself. I'm
-                    a 18 years old student belonging to the Homo Sapiens
-                    species, a brother, a son, a friend, a self taught web
-                    developer and programmer. I was already creating amazing
-                    projects using Python back in 11th grade, and started
-                    frontend development soon after. So far, I've mastered many
-                    languages, including TypeScript, Python, and C++.
+                    I&apos;m abdrahim! Let me tell you a little bit about
+                    myself. I&apos;m a 18 years old student belonging to the
+                    Homo Sapiens species, a brother, a son, a friend, a self
+                    taught web developer and programmer. I was already creating
+                    amazing projects using Python back in 11th grade, and
+                    started frontend development soon after. So far, I&apos;ve
+                    mastered many languages, including TypeScript, Python, and
+                    C++.
                     <br />
                     <br />
                     Things I do other than dev and programming? Not much, but I
                     enjoy gaming and watching anime.
                     <br />
                     <br />
-                    That's pretty much everything I know about me yet. In case
-                    you know something about me that I still don't, please let
-                    me know - I'll add it here.
+                    That&apos;s pretty much everything I know about me yet. In
+                    case you know something about me that I still don&apos;t,
+                    please let me know - I&apos;ll add it here.
                 </p>
             </div>
         </Container>
