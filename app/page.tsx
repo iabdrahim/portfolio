@@ -12,8 +12,8 @@ export default function Home() {
         <Container className="mt-20 hero">
             <div className="">
                 <h1 className="w-full max-md:mt-6 text-8xl mb-6 font-black text-center max-md:text-[2.9rem] capitalize">
-                    i Know That
-                    <span className="text-[#d7b25f]">Good Dev</span> Means
+                    i Know That A
+                    <span className="text-[#d7b25f]"> Good Dev</span> Means
                     <br />
                     <span className="text-[#d7b25f]">Good Business</span>.
                 </h1>
