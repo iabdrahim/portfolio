@@ -64,7 +64,10 @@ export default function Stats() {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 mt-4 gap-4">
             {statCards.map((card) => (
-                <div className="bg-[#f7f7f7] dark:bg-[#222222b2] rounded-lg shadow-lg p-4 flex flex-col justify-between gap-2 border border-[#ddd] dark:border-[#222] border-solid ">
+                <div
+                    key={card.title}
+                    className="bg-[#f7f7f7] dark:bg-[#222222b2] rounded-lg shadow-lg p-4 flex flex-col justify-between gap-2 border border-[#ddd] dark:border-[#222] border-solid "
+                >
                     <a
                         className="text-zinc-700 dark:text-zinc-400 flex gap-4 m-0"
                         href={card.link}
@@ -75,10 +78,10 @@ export default function Stats() {
                         <svg
                             stroke="currentColor"
                             fill="none"
-                            strokeWwidth="2"
+                            strokeWidth="2"
                             viewBox="0 0 24 24"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                             height="1em"
                             width="1em"
                             xmlns="http://www.w3.org/2000/svg"
