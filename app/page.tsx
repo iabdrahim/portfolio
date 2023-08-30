@@ -20,7 +20,7 @@ export default function Home() {
 
                 <div className="container text-center">
                     <h3 className="text-lg max-md:text-base font-medium">
-                        Hey, I’m{" "}
+                        Hey, I&apos;m{" "}
                         <Link
                             href="/about"
                             className="border-[2px] border-transparent border-b-[#d7b25f] border-solid hover:border-transparent"
