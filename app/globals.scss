@@ -1,0 +1,82 @@
+@import url(https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,300,400&display=swap);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+$md: "min-width: 768px";
+
+body {
+    color: rgb(var(--foreground-rgb));
+    font-family: "Satoshi", sans-serif !important;
+    min-height: 100vh;
+}
+*::selection {
+    background-color: rgb(215, 178, 95, 0.2);
+}
+nav {
+    position: sticky;
+    z-index: 10;
+    top: -1px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
+    border-bottom-color: transparent;
+    .logo svg {
+        @media not all and ($md) {
+            width: 98px;
+            height: 70px;
+        }
+    }
+    & > div.flex.items-center.flex-row.justify-start > p {
+        overflow: hidden;
+        @media not all and ($md) {
+            display: none;
+        }
+    }
+    &.scrolling {
+        max-width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        @media not all and ($md) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
+}
+
+html.dark {
+    #nprogress .bar {
+        background: rgb(215, 178, 95) !important;
+    }
+}
+html.light {
+    #nprogress .bar {
+        background: rgb(215, 178, 95) !important;
+    }
+}
+
+@layer base {
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+}
+
+.hoverMove {
+    transition: all 8s linear;
+}
