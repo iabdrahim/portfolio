@@ -60,7 +60,7 @@ export default function Portfolio() {
             </div>
             <main className="grid grid-cols-3 max-md:grid-cols-1 mt-8 gap-x-5 gap-y-6">
                 {work.map((pro) => (
-                    <Pro pro={pro} />
+                    <Pro pro={pro} key={pro.name} />
                 ))}
             </main>
         </Container>

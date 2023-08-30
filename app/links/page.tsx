@@ -33,7 +33,7 @@ export default function Portfolio() {
                             Discord{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             asheeshh#4872
                         </p>
@@ -46,7 +46,7 @@ export default function Portfolio() {
                             GitHub{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             @asrvd
                         </p>
@@ -59,7 +59,7 @@ export default function Portfolio() {
                             Instagram{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             @asrvd_
                         </p>
@@ -72,7 +72,7 @@ export default function Portfolio() {
                             Twitter{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             @_asheeshh
                         </p>
@@ -86,7 +86,7 @@ export default function Portfolio() {
                             NPM{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             @asheeshh
                         </p>
@@ -99,7 +99,7 @@ export default function Portfolio() {
                             Spotify{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             @asheeshh
                         </p>
@@ -112,7 +112,7 @@ export default function Portfolio() {
                             Dev.to{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             @asheeshh
                         </p>
@@ -120,7 +120,7 @@ export default function Portfolio() {
                             <svg
                                 stroke="currentColor"
                                 fill="currentColor"
-                                strokeWwidth="0"
+                                strokeWidth="0"
                                 role="img"
                                 viewBox="0 0 24 24"
                                 height="1em"
@@ -137,7 +137,7 @@ export default function Portfolio() {
                             Hashnode{" "}
                             <span className="dark:text-zinc-600 text-zinc-500">
                                 {" "}
-                                //{" "}
+                                {"//"}
                             </span>{" "}
                             @asheeshh
                         </p>

@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-
 import type { NextApiRequest, NextApiResponse } from "next";
 import { getAnalytics } from "@/utils/umami";
 
