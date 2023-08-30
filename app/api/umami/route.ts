@@ -1,8 +1,6 @@
-import type { NextApiRequest, NextApiResponse } from "next";
 import { getAnalytics } from "@/utils/umami";
-import { NextRequest } from "next/server";
 
-export async function GET(req: NextRequest) {
+export async function GET(req: Request) {
     try {
         const resp = await getAnalytics();
         const analytics = await resp.json();
