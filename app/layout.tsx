@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "../components/nav";
 import Providers from "../components/provider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +44,11 @@ export default function RootLayout({
                     {children}
                 </Providers>
             </body>
+            <Script
+                strategy="afterInteractive"
+                src="https://analytics.umami.is/script.js"
+                data-website-id="814f108c-0b94-40ae-95c8-32ed7b164e17"
+            />
         </html>
     );
 }
