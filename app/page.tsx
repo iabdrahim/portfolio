@@ -27,9 +27,8 @@ export default function Home() {
                         >
                             Abdrahim
                         </Link>{" "}
-                        , Learning about web and trying to help out other devs
-                        in the process. I love open source and writing about
-                        tech occasionally.
+                        , I build accessible, inclusive products and digital
+                        experiences for the web.
                     </h3>
                     <h3 className="mt-4 font-medium italic">
                         Solo

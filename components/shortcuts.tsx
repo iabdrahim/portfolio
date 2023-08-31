@@ -1,20 +1,22 @@
 "use client";
 import Link from "next/link";
-
+import { HiHome, HiLink, HiBookOpen, HiCollection } from "react-icons/hi";
+import { HiBolt } from "react-icons/hi2";
 export default function Cuts({
     setShowCuts,
 }: {
     setShowCuts: (c: boolean) => void;
 }) {
     let shortcuts = [
-        { name: "home", key: "h" },
+        { name: "home", key: "h", icon: HiHome },
         {
             name: "about",
             key: "a",
+            icon: HiBookOpen,
         },
-        { name: "dashboard", key: "d" },
-        { name: "links", key: "l" },
-        { name: "portfolio", key: "p" },
+        { name: "dashboard", key: "d", icon: HiBolt },
+        { name: "links", key: "l", icon: HiLink },
+        { name: "portfolio", key: "p", icon: HiCollection },
     ];
     return (
         <div
@@ -52,7 +54,7 @@ export default function Cuts({
                         id="kbar-listbox"
                         style={{ height: "476px", width: "100%" }}
                     >
-                        <h3 className="text-gra-400 text-base my-4">
+                        <h3 className="text-gray-400 text-base mb-4 px-4">
                             Navigation
                         </h3>
                         {shortcuts.map((shortcut) => (
@@ -63,27 +65,14 @@ export default function Cuts({
                             >
                                 <div className="py-2 px-3 flex gap-2 align-center justify-between  transition-all transparent">
                                     <div className="flex items-center gap-3">
-                                        <div className="flex flex-col text-sm text-gray-900 dark:text-zinc-200 cursor-pointer">
+                                        <div className="flex flex-col text-sm text-gray-900 dark:text-zinc-200 items-center cursor-pointer">
                                             <div className="flex gap-2">
-                                                <svg
-                                                    stroke="currentColor"
-                                                    fill="none"
-                                                    strokeWidth={2}
-                                                    viewBox="0 0 24 24"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                    height="1rem"
-                                                    width="1rem"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
-                                                    <polyline points="9 22 9 12 15 12 15 22" />
-                                                </svg>
+                                                {shortcut.icon({})}
                                                 <span>{shortcut.name}</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="flex items-center justify-center">
+                                    <div className="flex items-center justify-center text-gray-500">
                                         <kbd className="px-2 py-1 mr-2 text-sm bg-zinc-300 rounded dark:bg-zinc-700 dark:text-zinc-300 text-zinc-600 h-fit">
                                             ctrl
                                         </kbd>

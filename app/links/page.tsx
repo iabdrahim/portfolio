@@ -1,15 +1,25 @@
 import Container from "@/components/Container";
 import { Metadata } from "next";
+import {
+    SiDiscord,
+    SiGithub,
+    SiInstagram,
+    SiTwitter,
+    SiNpm,
+    SiSpotify,
+    SiDevdotto,
+    SiBlogger,
+} from "react-icons/si";
 
 let Links = [
-    { name: "Discord", value: "@abdrahimo" },
-    { name: "GitHub", value: "@abdrahimo" },
-    { name: "Instagram", value: "@abdrahimo" },
-    { name: "Twitter", value: "@abdrahimo" },
-    { name: "NPM", value: "@abdrahimo" },
-    { name: "Spotify", value: "@abdrahimo" },
-    { name: "Dev.to", value: "@abdrahimo" },
-    { name: "my blog", value: "harmesh.vercel.app" },
+    { name: "Discord", value: "@abdrahimo", icon: SiDiscord },
+    { name: "GitHub", value: "@abdrahimo", icon: SiGithub },
+    { name: "Instagram", value: "@abdrahimo", icon: SiInstagram },
+    { name: "Twitter", value: "@abdrahimo", icon: SiTwitter },
+    { name: "NPM", value: "@abdrahimo", icon: SiNpm },
+    { name: "Spotify", value: "@abdrahimo", icon: SiSpotify },
+    { name: "Dev.to", value: "@abdrahimo", icon: SiDevdotto },
+    { name: "my blog", value: "harmesh.vercel.app", icon: SiBlogger },
 ];
 
 export const metadata: Metadata = {
@@ -43,7 +53,7 @@ export default function Portfolio() {
                                 {link.value}
                             </p>
                             <p className="dark:text-zinc-300 text-zinc-800 m-0">
-                                📎
+                                {link.icon({})}
                             </p>
                         </div>
                     ))}

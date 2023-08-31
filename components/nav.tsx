@@ -10,9 +10,9 @@ import {
     HiSun,
     HiBookOpen,
     HiCollection,
-    HiFastForward,
 } from "react-icons/hi";
 import Cuts from "./shortcuts";
+import { HiBolt } from "react-icons/hi2";
 import { MdKeyboardCommandKey } from "react-icons/md";
 
 export default function Nav() {
@@ -114,7 +114,7 @@ export default function Nav() {
                                 onClick={() => setDrop(false)}
                                 className="px-2 rounded-lg py-2 text-gray-700 dark:text-gray-300 text-sm capitalize transition-colors duration-300 transform hover:bg-[#f5f5f5] dark:hover:bg-[#222] dark:hover:text-white w-full flex justify-start gap-4 items-center"
                             >
-                                <HiFastForward size={20} />
+                                <HiBolt size={20} />
                                 dashboard
                             </Link>
                             <Link
