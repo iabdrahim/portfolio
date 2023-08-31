@@ -21,12 +21,12 @@ export default function Portfolio() {
             </div>
 
             <div className="flex justify-between">
-                <p className="text-lg mb-8">
+                <p className="text-lg mb-8 text-gray-900">
                     Most of the things you (maybe) want to know about me.
                     <br />
                     <br />
                     I&apos;m abdrahim! Let me tell you a little bit about
-                    myself. I&apos;m a 18 years old student belonging to the
+                    myself. I&apos;m a 19 years old student belonging to the
                     Homo Sapiens species, a brother, a son, a friend, a self
                     taught web developer and programmer. I was already creating
                     amazing projects using Python back in 11th grade, and

@@ -65,11 +65,9 @@ export default function Cuts({
                             >
                                 <div className="py-2 px-3 flex gap-2 align-center justify-between  transition-all transparent">
                                     <div className="flex items-center gap-3">
-                                        <div className="flex flex-col text-sm text-gray-900 dark:text-zinc-200 items-center cursor-pointer">
-                                            <div className="flex gap-2">
+                                        <div className="flex flex-col text-sm text-gray-900 dark:text-zinc-200 gap-2 items-center cursor-pointer">
                                                 {shortcut.icon({})}
                                                 <span>{shortcut.name}</span>
-                                            </div>
                                         </div>
                                     </div>
                                     <div className="flex items-center justify-center text-gray-500">
