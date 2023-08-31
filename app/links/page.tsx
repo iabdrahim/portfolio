@@ -30,7 +30,10 @@ export default function Portfolio() {
             <div className="bg-[#fdfdfd] dark:bg-[#222] rounded-lg shadow-xl p-4 flex justify-between gap-2">
                 <div className="flex flex-col w-full gap-2">
                     {Links.map((link) => (
-                        <div className="flex justify-between items-center dark:bg-zinc-900/60 bg-zinc-100/60 duration-200 p-2 rounded-lg hover:shadow-lg cursor-pointer w-full hover:-translate-y-1">
+                        <div
+                            key={link.name}
+                            className="flex justify-between items-center dark:bg-zinc-900/60 bg-zinc-100/60 duration-200 p-2 rounded-lg hover:shadow-lg cursor-pointer w-full hover:-translate-y-1"
+                        >
                             <p className="dark:text-zinc-300 text-zinc-800 m-0 text-sm lg:text-base md:text-base">
                                 {link.name}
                                 <span className="dark:text-zinc-600 text-zinc-500">
