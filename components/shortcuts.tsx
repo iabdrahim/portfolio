@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import React from "react";
 
 export default function Cuts({
     setShowCuts,
@@ -53,6 +52,9 @@ export default function Cuts({
                         id="kbar-listbox"
                         style={{ height: "476px", width: "100%" }}
                     >
+                        <h3 className="text-gra-400 text-base my-4">
+                            Navigation
+                        </h3>
                         {shortcuts.map((shortcut) => (
                             <Link
                                 href={"/" + shortcut.name}

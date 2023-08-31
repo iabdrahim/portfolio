@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 export default function Portfolio() {
     return (
-        <Container className="max-w-3xl" fullWidth={true}>
+        <Container className="max-w-4xl" fullWidth={true}>
             <div className="flex max-md:mt-6 justify-between gap-4 w-full mb-6">
                 <h1 className="text-7xl font-black max-md:text-[2.7rem]">
                     About Me

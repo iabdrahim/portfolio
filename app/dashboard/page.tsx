@@ -1,7 +1,6 @@
 import Container from "@/components/Container";
-import React from "react";
-import Stats from "./stats";
 import { Metadata } from "next";
+import Stats from "./stats";
 
 let techs = [
     "js",
