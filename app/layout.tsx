@@ -23,6 +23,9 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         site: "@asheeshh_",
     },
+    verification: {
+        google: "5EySfeUGoEZeYFK_SsE2qJD_ZcX4S9e_YmkrEtpZKZs",
+    },
 };
 
 export default function RootLayout({
