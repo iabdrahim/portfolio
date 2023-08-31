@@ -5,21 +5,21 @@ import {
     SiGithub,
     SiInstagram,
     SiTwitter,
-    SiNpm,
+    SiFacebook,
     SiSpotify,
     SiDevdotto,
     SiBlogger,
 } from "react-icons/si";
 
 let Links = [
-    { name: "Discord", value: "@abdrahimo", icon: SiDiscord },
-    { name: "GitHub", value: "@abdrahimo", icon: SiGithub },
+    { name: "Discord", value: "@iabdrahim", icon: SiDiscord },
+    { name: "GitHub", value: "@iabdrahim", icon: SiGithub },
     { name: "Instagram", value: "@abdrahimo", icon: SiInstagram },
-    { name: "Twitter", value: "@abdrahimo", icon: SiTwitter },
-    { name: "NPM", value: "@abdrahimo", icon: SiNpm },
+    { name: "Twitter", value: "@iabdrahimz", icon: SiTwitter },
+    { name: "Facebook", value: "@imabdrahim", icon: SiFacebook },
     { name: "Spotify", value: "@abdrahimo", icon: SiSpotify },
     { name: "Dev.to", value: "@abdrahimo", icon: SiDevdotto },
-    { name: "my blog", value: "harmesh.vercel.app", icon: SiBlogger },
+    { name: "my blog", value: "hamesh.vercel.app", icon: SiBlogger },
 ];
 
 export const metadata: Metadata = {

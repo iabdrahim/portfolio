@@ -15,7 +15,7 @@ export default function Portfolio() {
                 </h1>
                 <img
                     className="rounded-full h-36 w-36 max-md:h-24 max-md:w-24"
-                    src="https://avatars.githubusercontent.com/u/68690233?v=4"
+                    src="https://avatars.githubusercontent.com/u/108197963?v=4"
                     alt="my avatar"
                 />
             </div>
