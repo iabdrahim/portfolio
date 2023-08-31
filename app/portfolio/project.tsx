@@ -20,7 +20,7 @@ export default function Pro({
             <div className="image rounded-xl overflow-hidden w-full max-h-80 border border-solid dark:border-[#222] border-[#ddd] h-80">
                 <img
                     src={pro.image}
-                    className="object-cover w-full h-fit max-h-fit hoverMove min-h-100"
+                    className="object-cover w-full h-fit max-h-fit hoverMove min-h-full"
                     alt="project image"
                     style={{ transform: "translateY(-" + height + "px)" }}
                     onMouseEnter={(e) => {
@@ -32,10 +32,12 @@ export default function Pro({
             </div>
             <div className="info flex justify-between items-start">
                 <div className="flex flex-col">
-                    <h3 className="text-2xl font-bold capitalize">
+                    <h3 className="text-2xl max-md:text-xl font-bold capitalize">
                         {pro.name}
                     </h3>
-                    <p className="capitalize">{pro.langs.join(" , ")}</p>
+                    <p className="capitalize max-md:text-sm">
+                        {pro.langs.join(" , ")}
+                    </p>
                 </div>
                 <div className="flex gap-2 op mt-2">
                     <a

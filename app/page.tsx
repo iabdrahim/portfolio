@@ -11,9 +11,9 @@ export default function Home() {
     return (
         <Container className="mt-20 hero">
             <div className="">
-                <h1 className="w-full max-md:mt-6 text-8xl mb-6 font-black text-center max-md:text-[2.9rem] capitalize">
-                    i Know That A
-                    <span className="text-[#d7b25f]"> Good Dev</span> Means
+                <h1 className="w-full max-md:mt-6 text-7xl mb-6 font-black text-center max-sm:text-[2.4rem] ">
+                    I know that
+                    <span className="text-[#d7b25f]"> Good Dev</span> means
                     <br />
                     <span className="text-[#d7b25f]">Good Business</span>.
                 </h1>
@@ -34,7 +34,7 @@ export default function Home() {
                     <h3 className="mt-4 font-medium italic">
                         Solo
                         <em className="text-[#d7b25f]">
-                            <span> developer</span>
+                            <span> developer </span>
                         </em>
                         kinda student .
                     </h3>

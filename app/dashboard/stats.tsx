@@ -21,7 +21,7 @@ export default function Stats() {
     );
     const diffCalc = () => {
         const diff =
-            (new Date().getTime() - new Date("May 21, 2007").getTime()) /
+            (new Date().getTime() - new Date("May 21, 2004").getTime()) /
             1000 /
             60 /
             60 /
@@ -42,12 +42,12 @@ export default function Stats() {
         {
             title: "GitHub Stars",
             value: githubData?.stars,
-            link: "https://github.com/asrvd",
+            link: "https://github.com/iabdrahim",
         },
         {
             title: "GitHub Followers",
             value: githubData?.followers,
-            link: "https://github.com/asrvd?tab=followers",
+            link: "https://github.com/iabdrahim?tab=followers",
         },
 
         {
@@ -57,8 +57,10 @@ export default function Stats() {
         },
         {
             title: "Coding Hours",
-            value: Math.round((wakatimeData?.total_seconds as number) / 3600),
-            link: "https://wakatime.com/@asheeshh",
+            value: Math.round(
+                (wakatimeData?.total_seconds as number) / 3600
+            ).toString(),
+            link: "https://wakatime.com/@abdrahimo",
         },
     ];
     return (

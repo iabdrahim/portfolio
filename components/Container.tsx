@@ -15,7 +15,7 @@ function Container({
     return (
         <>
             <main
-                className={`m-auto w-full transition-all h-full minHiegth ${
+                className={`m-auto w-full transition-all h-full minHiegth mb-6 ${
                     !fullWidth
                         ? "max-w-6xl mx-auto px-4 max-md:px-2"
                         : "px-4 md:px-24"

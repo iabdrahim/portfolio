@@ -26,11 +26,11 @@ export const metadata: Metadata = {
 export default function Portfolio() {
     return (
         <Container>
-            <h1 className="w-full text-7xl font-black mt-4 max-md:text-5xl mb-8 max-md:mt-6">
+            <h1 className="w-full text-7xl font-black mt-4 max-md:text-[2.8rem] mb-6 max-md:mt-6">
                 Dashboard
             </h1>
             <div className="flex flex-col gap-2">
-                <p className="text-gray-400 mb-2">
+                <p className="text-gray-400 mb-2 max-md:text-base">
                     Technologies i have used recently:
                 </p>
                 <div className="flex gap-4 flex-wrap items-center justify-start">
@@ -42,7 +42,7 @@ export default function Portfolio() {
                         ></img>
                     ))}
                 </div>
-                <p className="text-gray-400 mt-6">
+                <p className="text-gray-400 mt-6 max-md:text-base">
                     Random stats related to me.
                 </p>
                 <div className="w-full bg-[#ddd] h-[1px] my-4 dark:bg-[#222]"></div>

@@ -67,7 +67,7 @@ export default function Nav() {
         <>
             <div className="observer-element h-2 md:h-4"></div>
             <nav
-                className={`sticky-nav max-w-8xl mx-auto m-auto w-full h-6 flex flex-row justify-between items-center mb-2 md:mb-8 py-8 bg-opacity-60 px-4 ${
+                className={`sticky-nav max-w-7xl mx-auto m-auto w-full h-6 max-md:h-5 flex flex-row justify-between items-center mb-2 md:mb-8 py-8 max-md:py-6 bg-opacity-60 px-4 ${
                     Scroll == 0 ? "" : "scrolling"
                 }`}
                 id="sticky-nav"
@@ -75,7 +75,7 @@ export default function Nav() {
                 <div className="flex">
                     <div className="relative inline-block ">
                         <button
-                            className="relative z-10 block hover:bg-[#f5f5f5] dark:hover:bg-[#222] p-2 border-transparent rounded-md bg-transparent focus:bg-[#f5f5f5] dark:focus:bg-[#222]"
+                            className="relative -translate-x-2 z-10 block hover:bg-[#f5f5f5] dark:hover:bg-[#222] p-2 border-transparent rounded-md bg-transparent focus:bg-[#f5f5f5] dark:focus:bg-[#222]"
                             onClick={() => setDrop(!drop)}
                         >
                             <HiOutlineMenuAlt2 size={24} />

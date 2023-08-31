@@ -58,13 +58,6 @@ export default function Cuts({
                                 href={"/" + shortcut.name}
                                 key={shortcut.key}
                                 aria-selected="false"
-                                style={{
-                                    position: "absolute",
-                                    top: "0px",
-                                    left: "0px",
-                                    width: "100%",
-                                    transform: "translateY(40px)",
-                                }}
                             >
                                 <div className="py-2 px-3 flex gap-2 align-center justify-between  transition-all transparent">
                                     <div className="flex items-center gap-3">
@@ -89,6 +82,10 @@ export default function Cuts({
                                         </div>
                                     </div>
                                     <div className="flex items-center justify-center">
+                                        <kbd className="px-2 py-1 mr-2 text-sm bg-zinc-300 rounded dark:bg-zinc-700 dark:text-zinc-300 text-zinc-600 h-fit">
+                                            ctrl
+                                        </kbd>
+                                        +
                                         <kbd className="px-2 py-1 ml-2 text-sm bg-zinc-300 rounded dark:bg-zinc-700 dark:text-zinc-300 text-zinc-600 h-fit">
                                             {shortcut.key}
                                         </kbd>

@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 export default function Portfolio() {
     return (
         <Container className="max-w-3xl" fullWidth={true}>
-            <div className="flex justify-between flex-wrap gap-4 w-full">
-                <h1 className="max-md:mt-6 text-7xl font-black max-md:text-5xl">
+            <div className="flex max-md:mt-6 justify-between gap-4 w-full mb-6">
+                <h1 className="text-7xl font-black max-md:text-[2.7rem]">
                     About Me
                 </h1>
                 <img
-                    className="rounded-full h-36 w-36"
+                    className="rounded-full h-36 w-36 max-md:h-24 max-md:w-24"
                     src="https://avatars.githubusercontent.com/u/68690233?v=4"
                     alt="my avatar"
                 />

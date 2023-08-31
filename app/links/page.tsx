@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Portfolio() {
     return (
         <Container className="max-w-3xl">
-            <h1 className="w-full max-md:mt-6 text-7xl font-black max-md:text-5xl mb-6">
+            <h1 className="w-full max-md:mt-6 text-7xl font-black max-md:text-[2.8rem] mb-6">
                 Links
             </h1>
             <p className="text-gray-400 mb-6 capitalize">
