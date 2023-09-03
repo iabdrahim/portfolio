@@ -30,13 +30,13 @@ export default function Home() {
                         , I build accessible, inclusive products and digital
                         experiences for the web.
                     </h3>
-                    <h3 className="mt-4 font-medium italic">
+                    <h2 className="mt-4 font-medium italic">
                         Solo
                         <em className="text-[#d7b25f]">
                             <span> developer </span>
                         </em>
                         kinda student .
-                    </h3>
+                    </h2>
                 </div>
             </div>
         </Container>
