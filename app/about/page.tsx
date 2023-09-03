@@ -21,7 +21,7 @@ export default function Portfolio() {
             </div>
 
             <div className="flex justify-between">
-                <p className="text-lg mb-8 text-gray-900">
+                <p className="text-lg mb-8 text-gray-900 dark:text-gray-200">
                     Most of the things you (maybe) want to know about me.
                     <br />
                     <br />
