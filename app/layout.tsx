@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "abdrahimo",
-    description: "abdrahimo website",
+    description: "abderrahim aneddam, student and web developer from Morroco",
     themeColor: "#27272a",
     keywords: [
         "abderrahim aneddam",
@@ -27,7 +27,8 @@ export const metadata: Metadata = {
         siteName: "iabderahim",
         title: "abdrahimo",
         type: "website",
-        description: "abdrahimo website",
+        description:
+            "abderrahim aneddam, student and web developer from Morroco",
         images: "https://user-images.githubusercontent.com/68690233/211317069-9fdd4a02-78c9-4215-a397-748025e968de.png",
     },
     twitter: {

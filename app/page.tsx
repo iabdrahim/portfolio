@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
     title: "abdrahimo // home",
     icons: "https://fmj.asrvd.me/🎐",
-    description: "abdrahim aneddam, student and web developer from Morroco",
+    description: "abderrahim aneddam, student and web developer from Morroco",
 };
 export default function Home() {
     return (
