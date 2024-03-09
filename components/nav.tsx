@@ -19,10 +19,9 @@ import { IconType } from "react-icons";
 const maxAdditionalSize = 5;
 
 export default function Nav() {
+  const dockRef = useRef<HTMLDivElement>(null);
   let [isDark, setDark] = useState(false);
   let [drop, setDrop] = useState(false);
-  const dockRef = useRef<HTMLDivElement>(null);
-  let r = useRouter();
 
   //change to dark/light
   let handleChangeTheme = () => {
@@ -80,50 +79,52 @@ export default function Nav() {
 
   return (
     <>
-      <footer className="">
-        <div className="fixed top-[85vh] z-30 w-full flex justify-center items-center origin-center max-sm:top-[88vh] backdrop-blur-sm rounded-sm bg-white/20 dark:bg-black/20 max-w-fit left-2/4 -translate-x-2/4 p-1 px-2 max-sm:p-[1px]">
-          <Btn to="/" handleHover={handleHover} Icon={HiHome} text="Home" />
-          <Btn
-            to="/portfolio"
-            handleHover={handleHover}
-            Icon={HiCollection}
-            text="Portfolio"
-          />
-          <Btn
-            to="/about"
-            handleHover={handleHover}
-            Icon={HiBookOpen}
-            text="About"
-          />
-          <Btn
-            to="/dashboard"
-            handleHover={handleHover}
-            Icon={HiBolt}
-            text="dashboard"
-          />
-          <Btn
-            to="/links"
-            handleHover={handleHover}
-            Icon={HiLink}
-            text="links"
-          />
-          <Btn
-            to=""
-            handleHover={handleHover}
-            Icon={HiSun}
-            text="toggel theme"
-            click={handleChangeTheme}
-          />
-          <Btn
-            to=""
-            handleHover={handleHover}
-            Icon={MdKeyboardCommandKey}
-            click={() => setShowCuts(true)}
-            text="shortcuts"
-          />
-        </div>
-      </footer>
-      {showCuts && <Cuts setShowCuts={setShowCuts} />}
+      <div className="flex justify-center items-end fixed w-full h-screen left-0 top-0">
+        <nav ref={dockRef} className="dock mx-auto">
+          <ul>
+            <Btn to="/" handleHover={handleHover} Icon={HiHome} text="Home" />
+            <Btn
+              to="/portfolio"
+              handleHover={handleHover}
+              Icon={HiCollection}
+              text="Portfolio"
+            />
+            <Btn
+              to="/about"
+              handleHover={handleHover}
+              Icon={HiBookOpen}
+              text="About"
+            />
+            <Btn
+              to="/dashboard"
+              handleHover={handleHover}
+              Icon={HiBolt}
+              text="dashboard"
+            />
+            <Btn
+              to="/links"
+              handleHover={handleHover}
+              Icon={HiLink}
+              text="links"
+            />
+            <Btn
+              to=""
+              handleHover={handleHover}
+              Icon={HiSun}
+              text="toggel theme"
+              click={handleChangeTheme}
+            />
+            <Btn
+              to=""
+              handleHover={handleHover}
+              Icon={MdKeyboardCommandKey}
+              click={() => setShowCuts(true)}
+              text="shortcuts"
+            />{" "}
+          </ul>
+        </nav>
+        {showCuts && <Cuts setShowCuts={setShowCuts} />}
+      </div>
       <div className="h-[5rem] w-full"></div>
     </>
   );
@@ -143,21 +144,21 @@ let Btn = ({
   click?: any;
 }) => {
   return (
-    <button
-      className="macBtn max-sm:scale-90"
+    <li
+      className="app"
       onMouseMove={handleHover}
       onDrag={handleHover}
       {...(click && { onClick: click })}
     >
-      <Link
-        className="dark:bg-[#202020] bg-[#ebeaea] border border-[#ddd] dark:border-[#222]"
-        href={to}
-        {...(to == "" && { ariaDisabled: true })}
-      >
-        <Icon size={26} className="fill-black dark:fill-white" />
-        <span>{text}</span>
+      <Link className="" href={to} {...(to == "" && { ariaDisabled: true })}>
+        <div className="img ">
+          <div className="cube flex items-center justify-center dark:bg-[#202020] bg-[#ebeaea] border border-[#ddd] dark:border-[#222]">
+            <Icon size={26} className="fill-black dark:fill-white" />
+          </div>
+        </div>
+        <span className="tooltip">{text}</span>
       </Link>
-    </button>
+    </li>
   );
 };
 
