@@ -5,78 +5,144 @@
 @tailwind utilities;
 
 :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --foreground-rgb: 255, 255, 255;
-        --background-start-rgb: 0, 0, 0;
-        --background-end-rgb: 0, 0, 0;
-    }
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
 $md: "min-width: 768px";
 
 body {
-    color: rgb(var(--foreground-rgb));
-    font-family: "Satoshi", sans-serif !important;
-    min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+  font-family: "Satoshi", sans-serif !important;
+  min-height: 100vh;
 }
 *::selection {
-    background-color: rgb(215, 178, 95, 0.2);
+  background-color: rgb(215, 178, 95, 0.2);
 }
 nav {
-    position: sticky;
-    z-index: 10;
-    top: -1px;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
-    border-bottom-color: transparent;
-    .logo svg {
-        @media not all and ($md) {
-            width: 98px;
-            height: 70px;
-        }
+  position: sticky;
+  z-index: 10;
+  top: -1px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
+  border-bottom-color: transparent;
+  .logo svg {
+    @media not all and ($md) {
+      width: 98px;
+      height: 70px;
     }
-    & > div.flex.items-center.flex-row.justify-start > p {
-        overflow: hidden;
-        @media not all and ($md) {
-            display: none;
-        }
+  }
+  & > div.flex.items-center.flex-row.justify-start > p {
+    overflow: hidden;
+    @media not all and ($md) {
+      display: none;
     }
-    &.scrolling {
-        max-width: 100%;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        @media not all and ($md) {
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
+  }
+  &.scrolling {
+    max-width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    @media not all and ($md) {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
+  }
 }
 
 html.dark {
-    #nprogress .bar {
-        background: rgb(215, 178, 95) !important;
-    }
+  #nprogress .bar {
+    background: rgb(215, 178, 95) !important;
+  }
 }
 html.light {
-    #nprogress .bar {
-        background: rgb(215, 178, 95) !important;
-    }
+  #nprogress .bar {
+    background: rgb(215, 178, 95) !important;
+  }
 }
 
 @layer base {
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-    }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }
 
 .hoverMove {
-    transition: all 8s linear;
+  transition: all 8s linear;
+}
+
+.macBtn {
+  transition: width, height, margin-top, cubic-bezier(0.25, 1, 0.5, 1) 200ms;
+  list-style: none;
+  padding: 0.4rem 0.2rem;
+  height: 3.35rem;
+  width: 3.35rem;
+}
+.macBtn > a,
+.macBtn > button {
+  border-radius: 0.6rem;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  svg {
+    margin: auto;
+    transition: cubic-bezier(0.25, 1, 0.5, 1) 0.3s;
+    max-width: 1.3rem;
+  }
+}
+.macBtn span {
+  display: none;
+}
+
+.macBtn:hover {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 30px;
+  svg {
+    scale: 1.3;
+  }
+}
+
+/* Right side */
+.macBtn:hover + .macBtn {
+  width: calc(60px + var(--dock-offset-right, 0px));
+  height: calc(60px + var(--dock-offset-right, 0px));
+  margin-top: calc(-25px + var(--dock-offset-right, 0px) * -1);
+}
+
+.macBtn:hover + .macBtn + .macBtn {
+  width: calc(50px + var(--dock-offset-right, 0px));
+  height: calc(50px + var(--dock-offset-right, 0px));
+  margin-top: calc(-15px + var(--dock-offset-right, 0px) * -1);
+}
+
+/* Left side */
+.macBtn:has(+ .macBtn:hover) {
+  width: calc(60px + var(--dock-offset-left, 0px));
+  height: calc(60px + var(--dock-offset-left, 0px));
+  margin-top: calc(-25px + var(--dock-offset-left, 0px) * -1);
+}
+
+.macBtn:has(+ .macBtn + .macBtn:hover) {
+  width: calc(50px + var(--dock-offset-left, 0px));
+  height: calc(50px + var(--dock-offset-left, 0px));
+  margin-top: calc(-15px + var(--dock-offset-left, 0px) * -1);
+}
+
+.small-svg svg {
+  width: 1.16rem;
+  height: 1.16rem;
+  opacity: 0.93;
 }
