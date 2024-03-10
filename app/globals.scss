@@ -24,39 +24,6 @@ body {
   font-family: "Satoshi", sans-serif !important;
   min-height: 100vh;
 }
-*::selection {
-  background-color: rgb(215, 178, 95, 0.2);
-}
-nav {
-  position: sticky;
-  z-index: 10;
-  top: -1px;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0, 1);
-  border-bottom-color: transparent;
-  .logo svg {
-    @media not all and ($md) {
-      width: 98px;
-      height: 70px;
-    }
-  }
-  & > div.flex.items-center.flex-row.justify-start > p {
-    overflow: hidden;
-    @media not all and ($md) {
-      display: none;
-    }
-  }
-  &.scrolling {
-    max-width: 100%;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    @media not all and ($md) {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  }
-}
 
 html.dark {
   #nprogress .bar {
@@ -68,6 +35,14 @@ html.light {
     background: rgb(215, 178, 95) !important;
   }
 }
+
+*::selection {
+  background: rgb(215, 178, 95) !important;
+  color: black;
+}
+// *::selection {
+//   background-color: rgb(215, 178, 95, 0.2);
+// }
 
 @layer base {
   input[type="number"]::-webkit-inner-spin-button,
@@ -118,8 +93,8 @@ html.light {
   padding: 0 12px;
   background-image: linear-gradient(
     to bottom,
-    rgb(195 195 195 / 6%),
-    rgb(199 195 195 / 17%)
+    rgb(180 180 180 / 12%),
+    rgb(211 209 209 / 18%)
   );
   box-shadow: rgba(255, 255, 255, 0.17) 0px 0px 0px 1px inset;
 }
@@ -146,6 +121,18 @@ html.light {
   width: 100%;
   height: 100%;
   padding: 0.5rem 0.3rem;
+  position: relative;
+  // &.current::before {
+  //   content: "";
+  //   border-radius: 50%;
+  //   width: 5rem;
+  //   height: 5rem;
+  //   background-color: red;
+  //   position: absolute;
+  //   top: 1rem;
+  //   z-index: 10;
+  //   left: 0px;
+  // }
   .cube {
     width: 100%;
     height: 100%;
@@ -185,60 +172,4 @@ html.light {
   width: auto;
   box-shadow: rgba(0, 0, 0, 0.17) 0px 12px 8px 1px;
   white-space: nowrap;
-}
-
-.source-links {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  right: 20px;
-  top: 20px;
-  text-align: right;
-}
-
-.source-links a {
-  color: #fff;
-  opacity: 0.3;
-  margin-bottom: 8px;
-}
-
-.source-links a:hover {
-  opacity: 1;
-}
-
-.mobile-message {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.2;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-@media only screen and (max-width: 800px) {
-  .mobile-message {
-    display: flex;
-  }
-}
-
-.mobile-message p {
-  max-width: 70vw;
-}
-
-.mobile-message a {
-  color: #fff;
-}
-
-.mobile-message::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-color: rgba(255, 255, 255, 0.3);
-  filter: blur(80px);
-  -webkit-filter: blur(80px);
 }

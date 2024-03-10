@@ -37,7 +37,7 @@ export default function Stats() {
     {
       title: "My Age",
       value: age,
-      link: "https://asrvd.me/about",
+      link: "/about",
     },
     {
       title: "GitHub Stars",

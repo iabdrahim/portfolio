@@ -54,8 +54,8 @@ export default function RootLayout({
           className={`${inter.className} bg-day dark:bg-night text-gray-900 dark:text-gray-100 pt-16`}
         >
           {children}
+          <Nav />
         </body>
-        <Nav />
       </Providers>
       <Script
         strategy="afterInteractive"

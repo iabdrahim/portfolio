@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   HiOutlineMenuAlt2,
   HiHome,
@@ -21,7 +21,6 @@ const maxAdditionalSize = 5;
 export default function Nav() {
   const dockRef = useRef<HTMLDivElement>(null);
   let [isDark, setDark] = useState(false);
-  let [drop, setDrop] = useState(false);
 
   //change to dark/light
   let handleChangeTheme = () => {
@@ -79,8 +78,11 @@ export default function Nav() {
 
   return (
     <>
-      <div className="flex justify-center items-end fixed w-full h-screen left-0 top-0">
-        <nav ref={dockRef} className="dock mx-auto">
+      <div className="flex justify-center items-end fixed w-full h-fit left-0 bottom-0">
+        <nav
+          ref={dockRef}
+          className="dock mx-auto relative max-sm:scale-75 z-50"
+        >
           <ul>
             <Btn to="/" handleHover={handleHover} Icon={HiHome} text="Home" />
             <Btn
@@ -143,6 +145,7 @@ let Btn = ({
   to: string;
   click?: any;
 }) => {
+  let path = usePathname();
   return (
     <li
       className="app"
@@ -151,7 +154,7 @@ let Btn = ({
       {...(click && { onClick: click })}
     >
       <Link className="" href={to} {...(to == "" && { ariaDisabled: true })}>
-        <div className="img ">
+        <div className={"img " + to == path ? "current" : ""}>
           <div className="cube flex items-center justify-center dark:bg-[#202020] bg-[#ebeaea] border border-[#ddd] dark:border-[#222]">
             <Icon size={26} className="fill-black dark:fill-white" />
           </div>

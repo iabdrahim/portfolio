@@ -1,56 +1,6 @@
 import Container from "@/components/Container";
 import { Metadata } from "next";
-import {
-  SiDiscord,
-  SiGithub,
-  SiInstagram,
-  SiTwitter,
-  SiFacebook,
-  SiSpotify,
-  SiDevdotto,
-  SiBlogger,
-} from "react-icons/si";
-
-let Links = [
-  //   {
-  //     name: "Discord",
-  //     url: "https:/discord.com/@iabdrahim",
-  //     value: "@iabdrahim",
-  //     icon: SiDiscord,
-  //   },
-  {
-    name: "GitHub",
-    url: "https://github.com/iabdrahim",
-    value: "@iabdrahim",
-    icon: SiGithub,
-  },
-  {
-    name: "Instagram",
-    url: "https://instagram.com/iabdrahimo",
-    value: "@iabdrahimo",
-    icon: SiInstagram,
-  },
-  {
-    name: "Twitter",
-    url: "https://x.com/iabdrahimz",
-    value: "@iabdrahimz",
-    icon: SiTwitter,
-  },
-  { name: "Facebook", url: "", value: "@imabdrahim", icon: SiFacebook },
-  //   { name: "Spotify", value: "@abdrahimo", icon: SiSpotify },
-  {
-    name: "Dev.to",
-    url: "https://dev.to/abdrahimo",
-    value: "@abdrahimo",
-    icon: SiDevdotto,
-  },
-  {
-    name: "blog",
-    url: "https://hamesh.vercel.app",
-    value: "hamesh",
-    icon: SiBlogger,
-  },
-];
+import { Links } from "../constants";
 
 export const metadata: Metadata = {
   title: "abdrahimo // links",
@@ -60,7 +10,7 @@ export const metadata: Metadata = {
 export default function Portfolio() {
   return (
     <Container className="max-w-2xl">
-      <h1 className="w-full max-md:mt-6 text-7xl font-black max-md:text-[2.8rem] mb-6">
+      <h1 className="w-full max-md:mt-6 text-7xl font-black max-md:text-[2.5rem] mb-6">
         Links
       </h1>
       <p className="text-gray-400 mb-6 capitalize text-sm">
