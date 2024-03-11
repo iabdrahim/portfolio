@@ -154,7 +154,7 @@ let Btn = ({
       {...(click && { onClick: click })}
     >
       <Link className="" href={to} {...(to == "" && { ariaDisabled: true })}>
-        <div className={"img " + to == path ? "current" : ""}>
+        <div className="img">
           <div className="cube flex items-center justify-center dark:bg-[#202020] bg-[#ebeaea] border border-[#ddd] dark:border-[#222]">
             <Icon size={26} className="fill-black dark:fill-white" />
           </div>
